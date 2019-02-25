@@ -1,0 +1,252 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all"/>
+</head>
+<body>
+    <div class="wrapper row0">
+        
+  <div id="topbar" class="clear"> 
+    <!-- ################################################################################################ -->
+    <nav>
+      <ul>
+        
+        <li><a href="../Customer/search.aspx">search.aspx</a></li>
+        <li><a href="UserProfile.aspx">profile</a></li>
+        <li><a href="../Logout.aspx">Logout</a></li>
+          <li><a href="home.aspx">HOME</a></li>
+        <li><a href="uodate profile.aspx"> update profile</a></li>
+          <li><a href="ratingqueans.aspx">ratingqueans</a></li>
+      </ul>
+    </nav>
+    <!-- ################################################################################################ --> 
+  </div>
+</div>
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+<div class="wrapper row1">
+  <header id="header" class="clear"> 
+    <!-- ################################################################################################ -->
+    <div id="logo" class="fl_left">
+      <h1><a href="index.html">WORKER PORTAL</a></h1>
+      <p>CONNECT TO WORKERS</p>
+    </div>
+    <div class="fl_right">
+      <form class="clear" method="post" action="#">
+        <fieldset>
+          <legend>Search:</legend>
+          <input type="text" value="" placeholder="Search Here"/>
+          <button class="fa fa-search" type="submit" title="Search"><em>Search</em></button>
+        </fieldset>
+      </form>
+    </div>
+    <!-- ################################################################################################ --> 
+  </header>
+
+    
+     
+</div>
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+<div class="wrapper">
+  <div id="slider">
+    <div id="slide-wrapper" class="rounded clear"> 
+      <!-- ################################################################################################ -->
+      <figure style="background-color:#ffa500;height:300px" id="slide-1"><a class="view" href="#"></a>
+        <figcaption>
+          <h2>please login to find Worker for your choice</h2>
+          
+          <p class="right"><a href="Login.aspx">Login &raquo;</a></p>
+        </figcaption>
+      </figure>
+      <figure style="background-color:#99CC00;height:300px" id="slide-2"><a class="view" href="#"></a>
+        <figcaption>
+          <h2>please SIGN UP if you are new to website</h2>
+          <p>You can register as individuals,Company and Worker.</p>
+          <p class="right"><a href="Registration.aspx">SIGN UP &raquo;</a></p>
+        </figcaption>
+      </figure>
+      <figure style="background-color:#b19cd9;height:300px" id="slide-3"><a class="view" href="#"></a>
+        <figcaption>
+          <h2>ABOUT OUR WEBSITE</h2>
+          <p>“Worker’s Portal” It involves using technology to organize, automate, and synchronize employment activities for minority job section services. The overall goals are to find employment for minority job section workers.</p>
+          <p class="right"><a href="home.aspx">HOME</a></p>
+        </figcaption>
+      </figure>
+      <figure style="background-color:#f1ec0d;height:300px" id="slide-4"><a class="view" href="#"></a>
+        <figcaption>
+          <h2>CONTACT US WHEN YOU REQUIRE US</h2>
+          <p>Contact us when ever you require us,we are alwayys here to help you,be with us always.</p>
+          <p class="right"><a href="Layout.cshtml">Contact Us &raquo;</a></p>
+        </figcaption>
+      </figure>
+      <figure style="background-color:#FF0009;height:300px" id="slide-5"><a class="view" href="#"></a>
+        <figcaption>
+          <h2>PLEASE PROVIDE YOUR FEEDBACK</h2>
+          <p>We highly value your opinion so kindly provide your opinion about workers and our website</p>
+          <p class="right"><a href="ratingqueans.aspx">feedback form &raquo;</a></p>
+        </figcaption>
+      </figure>
+      <!-- ################################################################################################ -->
+      <ul id="slide-tabs">
+        <li><a href="#slide-1">LOGIN TO ENTER THE SYSYTEM</a></li>
+        <li><a href="#slide-2">REGISTER IF YOU ARE NEW TO SYSYTEM</a></li>
+        <li><a href="#slide-3">ABOUT OUR WEBSITE</a></li>
+        <li><a href="#slide-4">Contact us</a></li>
+        <li><a href="#slide-5">Feedback </a></li>
+      </ul>
+      <!-- ################################################################################################ --> 
+    </div>
+  </div>
+</div>
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+    <div  style="border:thick;border-color:white"   class="wrapper">
+    
+        <div>
+            <div style="border:5px groove white;">
+       
+  
+      <!-- ################################################################################################ -->
+      <figure id="Figure1"><a class="view" href="#"></a>
+        <figcaption style="border:thick;border-color:white">
+          <h2 style="font-family:Calibri;font-size:large;text-align:center;text-decoration-color:white"> WORKER PORTAL </h2>
+            <h2 style="font-family:Calibri;font-size:large;text-align:center;text-decoration:solid;"><asp:Label ID="Label1" runat="server" Text="Label"></asp:Label></h2>
+          
+        </figcaption>
+      </figure>
+        </div>
+            </div>
+        </div>
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+  <div class="rounded">
+    <main class="container clear"> 
+      <!-- main body --> 
+      <!-- ################################################################################################ -->
+      <div style="background-color:#ffa500 ;color:black">
+        <form style="background-color:#ffa500"  id="form3" runat="server">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+           
+            
+        </form>
+    </div>
+        </div>
+    </div>
+  
+         <div class="group btmspace-30"> 
+        <!-- Left Column -->
+        <div class="one_quarter first"> 
+          <!-- ################################################################################################ -->
+          <ul class="nospace">
+            <li class="btmspace-15"><a href="http://www.helpageindia.org/"><em class="heading">Helpageindia org</em> <img class="borderedbox" src="images/NGO.png" /></a></li>
+            <li class="btmspace-15"><a href="http://www.sapnaindia.org/"><em class="heading">Sapnaindia org</em> <img class="borderedbox" src="images/ngo2.jpg" /> </a></li>
+            <li class="btmspace-15"><a href="http://www.citehr.com/"><em class="heading">Citehr org</em> <img class="borderedbox" src="images/ngo3.gif" /></a></li>
+            <li><a href="https://www.akshayapatra.org"><em class="heading">Akshaypatra organization</em> <img class="borderedbox" src="images/ngo4.png" /> </a></li>
+          </ul>
+          <!-- ################################################################################################ --> 
+        </div>
+        <!-- / Left Column --> 
+        <!-- Middle Column -->
+        <div class="one_half"> 
+          <!-- ################################################################################################ -->
+          <h2>SUPORTING COMPANIES</h2>
+          <ul class="nospace listing">
+            <li class="clear">
+              <div class="imgl borderedbox"><img src="images/land%20t.jpg" /></div>
+              <p class="nospace btmspace-15"><a href="http://www.lntecc.com">L&T infrastructures.</a></p>
+              <p>L&T wins Dun & Bradstreet Corporate Awards 2015. Larsen & Toubro is a major technology, engineering, construction, manufacturing and financial services conglomerate, with global operations. L&T addresses critical needs in key sectors - Hydrocarbon, Infrastructure, Power, Process Industries and Defense - for customers in over 30 countries around the world.</a></p>
+            </li>
+            <li class="clear">
+              <div class="imgl borderedbox"><img src="images/irb.jpg" /> </div>
+              <p class="nospace btmspace-15"><a href="http://www.irb.co.in">IRB.</a></p>
+              <p>IRB proudly possesses one of the India's prime BOT projects in its portfolio viz., the Operation and Maintenance of Mumbai - Pune Expressway, and the four laning of NH-4 from Shil Phata to Dehu Road; two major roads connecting India's commercial capital to the rest of Maharashtra. 
+</p>
+            </li>
+            <li class="clear">
+              <div class="imgl borderedbox"><img src="images/re2.jpg" /></div>
+              <p class="nospace btmspace-15"><a href="http://www.rinfra.com">Reliance infrastructures.</a></p>
+              <p>One of the biggest infrastructure company of india lead by anil ambani and group.Better Roads for a Developing India.</p>
+            </li>
+          </ul>
+          <p class="right"><a href="#">Click here for other connected companies</a></p>
+          <!-- ################################################################################################ --> 
+        </div>
+        <!-- / Middle Column --> 
+        <!-- Right Column -->
+        <div class="one_quarter sidebar"> 
+          <!-- ################################################################################################ -->
+          <div class="sdb_holder">
+            <h6>Virtual Tour</h6>
+            <div class="mediacontainer"><img src="images/demo/video.gif" alt="">
+              <p><a href="#">View More Tour Videos Here</a></p>
+            </div>
+          </div>
+          <div class="sdb_holder">
+            <h6>Quick Information</h6>
+            <ul class="nospace quickinfo">
+              <li class="clear"><a href="#"><img src="images/demo/80x80.gif" alt=""> Make An Application</a></li>
+              <li class="clear"><a href="#"><img src="images/demo/80x80.gif" alt=""> Order A Prospectus</a></li>
+            </ul>
+          </div>
+          <!-- ################################################################################################ --> 
+        </div>
+        <!-- / Right Column --> 
+      </div>
+      <!-- ################################################################################################ --> 
+      <!-- ################################################################################################ -->
+      <div id="twitter" class="group btmspace-30">
+        <div class="one_quarter first center"><a href="#"><i class="fa fa-twitter fa-3x"></i><br>
+          Follow Us On Twitter</a></div>
+        <div class="three_quarter bold">
+          <p>For our progress and development of employment opportunity stay connected with us on our twitter account</p>
+        </div>
+      </div>
+      <!-- ################################################################################################ --> 
+      <!-- ################################################################################################ -->
+     
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ --> 
+<!-- ################################################################################################ -->
+<div class="wrapper row5">
+  <div id="copyright" class="clear"> 
+    <!-- ################################################################################################ -->
+    <p class="fl_left">Copyright &copy; 2015 - All Rights Reserved - <a href="#">Domain Name</a></p>
+    <p class="fl_right">Template by <a target="_blank" href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+    <!-- ################################################################################################ --> 
+  </div>
+   
+</div>
+<!-- JAVASCRIPTS --> 
+<script src="layout/scripts/jquery.min.js"></script> 
+<script src="layout/scripts/jquery.fitvids.min.js"></script> 
+<script src="layout/scripts/jquery.mobilemenu.js"></script> 
+<script src="layout/scripts/tabslet/jquery.tabslet.min.js"></script>
+    
+    
+    
+  
+       
+   
+    </>
+</body>
+</html>
